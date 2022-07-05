@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+	font-family: sans-serif;
+}
+.banner-area{
+
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('https://images.pexels.com/photos/12568118/pexels-photo-12568118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center center;
+    background-size:cover ;
+    /* -webkit-background-size:cover ; */
+    height: 100%;
+    width: 100%;
+	top: 50%;
+	bottom: 50%;
+}
+/* .logo{
+    height: 20%;
+    float: left;
+    color: azure;
+    list-style: none;
+    
+} */
+.banner-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.banner-text h1{
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'poppins' , sans-serif;
+}
+.banner-text p{
+    color: #fff;
+    font-size: 18px;
+}
+/* .banner-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+} */
+/* .banner-text a:hover{
+    background-color: white;
+    color: rgba(68, 25, 109, 0.623);
+    font-weight: bold;
+} */
+
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #fff;
+	cursor: grab;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background: #009688;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;
+}

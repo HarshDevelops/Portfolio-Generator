@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <form action="/" method="post">
+  <form action="/new" method="post">
     <div class="login-box">
       <h2>Name</h2>
 
@@ -41,7 +41,6 @@
         <input type="file" id="myfile" name="imageofyourself2 ">
       </div>
 
-    </div>
 
 
     <br>
@@ -49,23 +48,22 @@
     <br>
     <br>
 
-<!-- 
-    <div class="login-box-2">
+
 
       <h2>Education/Experience</h2>
 
       <h5 style="color:white;">Education-I:</h5>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education1" required="">
         <label>College/Company/School Name</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education1start" required="">
         <label>Start Year</label>
       </div>
 
       <div class="user-box">
-        <input type="text" name="" required="" class="e1">
+        <input type="text" name="education1end" required="" class="e1">
         <label class="e1l">End Year</label>
       </div>
       <input type="checkbox" id="ongoing-e1" name="ongoing" style="color: WHITE;">
@@ -76,16 +74,16 @@
 
       <h5 style="color:white;">Education-II:</h5>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education2" required="">
         <label>College/Company/School Name</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education2start" required="">
         <label>Start Year</label>
       </div>
 
       <div class="user-box">
-        <input type="text" name="" required="" class="e2">
+        <input type="text" name="education2end" required="" class="e2">
         <label class="e2l">End Year</label>
       </div>
       <input type="checkbox" id="ongoing-e2" name="ongoing" style="color: WHITE;">
@@ -97,16 +95,16 @@
 
       <h5 style="color:white;">Education-III:</h5>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education3" required="">
         <label>College/Company/School Name</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education3start" required="">
         <label>Start Year</label>
       </div>
 
       <div class="user-box">
-        <input type="text" name="" required="" class="e3">
+        <input type="text" name="education3end" required="" class="e3">
         <label class="e3l">End Year</label>
       </div>
       <input type="checkbox" id="ongoing-e3" name="ongoing" style="color: WHITE;">
@@ -116,16 +114,16 @@
 
       <h5 style="color:white;">Education-IV:</h5>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education4" required="">
         <label>College/Company/School Name</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="education4start" required="">
         <label>Start Year</label>
       </div>
 
       <div class="user-box">
-        <input type="text" name="" required="" class="e4">
+        <input type="text" name="education4end" required="" class="e4">
         <label class="e4l">End Year</label>
       </div>
       <input type="checkbox" id="ongoing-e4" name="ongoing" style="color: WHITE;">
@@ -137,26 +135,25 @@
       <br>
 
 
-      <div class="login-box-2 skillset">
         <h2 style="color:white;">Skills</h2>
         <p style="color:white ;">Select skills which you want in your portfolio</p>
 
-        <input type="checkbox" id="" name="" style="color: WHITE;">
+        <input type="checkbox" id="" name="python" style="color: WHITE;">
         <label for="ongoing" style="color:white;">Python</label>
         <br>
-        <input type="checkbox" id="" name="" style="color: WHITE;">
+        <input type="checkbox" id="" name="ccpp" style="color: WHITE;">
         <label for="ongoing" style="color:white;">C/C++</label>
         <br>
-        <input type="checkbox" id="" name="" style="color: WHITE;">
+        <input type="checkbox" id="" name="reactjs" style="color: WHITE;">
         <label for="ongoing" style="color:white;">React.Js</label>
         <br>
-        <input type="checkbox" id="" name="" style="color: WHITE;">
+        <input type="checkbox" id="" name="nodejs" style="color: WHITE;">
         <label for="ongoing" style="color:white;">Node.Js</label>
         <br>
-        <input type="checkbox" id="" name="" style="color: WHITE;">
+        <input type="checkbox" id="" name="java" style="color: WHITE;">
         <label for="ongoing" style="color:white;">Java</label>
         <br>
-        <input type="checkbox" id="" name="" style="color: WHITE;">
+        <input type="checkbox" id="" name="kotlin" style="color: WHITE;">
         <label for="ongoing" style="color:white;">Kotlin</label>
         <br>
         <br>
@@ -171,29 +168,33 @@
           <h4 style="color:white;">Major Project - I:</h4>
 
           <label for="myfile">Image - </label>
-          <input type="file" id="myfile" name="myfile"><br><br>
+          <input type="file" id="myfile" name="myfile1"><br><br>
 
-          <textarea placeholder="Write about it in no more than 20 words" rows="5" name="comment[text]"
-            id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox"
-            aria-autocomplete="list" aria-haspopup="true"></textarea>
+  
+            <div class="user-box">
+              <input type="text" name="myfile1desc" required="">
+              <label>Description</label>
+            </div>
+
         </div>
         <div>
           <h4 style="color:white;">Major Project - II:</h4>
 
           <label for="myfile">Image - </label>
-          <input type="file" id="myfile" name="myfile"><br><br>
+          <input type="file" id="myfile" name="myfile2"><br><br>
 
-          <textarea placeholder="Write about it in no more than 20 words" rows="5" name="comment[text]"
-            id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox"
-            aria-autocomplete="list" aria-haspopup="true"></textarea>
+
+            <div class="user-box">
+              <input type="text" name="myfile2desc" required="" >
+              <label>Description</label>
+            </div>
         </div>
+        <!-- <a href="/new"><button type="submit" class="btn">SUBMIT</button></a> -->
+        <button type="submit" class="btn">SUBMIT</button>
         <br>
-
-      </div> -->
-      <button type="submit" class="btn">SUBMIT</button>
+      
     </div>
-    <br>
-
+  
   </form>
   <script src="js/inputs.js"></script>
 
